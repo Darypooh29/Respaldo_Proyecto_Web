@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+
+html {
+    height: auto;
+    width: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.main-container {
+    min-height: 100vh;
+    background-image: url(../Images/atletico-hombre-mujer-pesas.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-content {
+    height: auto;
+    margin-top: 0;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navBar {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#ff4747;
+    box-shadow: 1px 1px 6px 2px #000000;
+}
+
+.navBar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navBar .options {
+    display: flex;
+    gap: 2rem; 
+}
+
+.navBar .toggle_btn {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navBar button {
+    background: none;
+    border: 0;
+}
+
+.navBar button:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    scale: 1.2;
+}
+
+.navBar button:active {
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.navBar i {
+    font-size: 1rem;
+}
+
+p, li {
+    margin: 0 1vw;
+}
+
+h1 {
+    padding: 0.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+    transition: 0.5s;   
+}
+
+.action_btn {
+    background: none;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    font-size: 1rem;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    transition: 0.5s;
+    color: #000000;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: #ffffff1a;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu li {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.description{
+    display: grid;
+    grid-template-columns: 1fr 29rem;
+    grid-template-rows: 1fr;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: linear-gradient(to top, #00000074, #19191abb);
+    text-align: justify;
+}
+
+.info-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.container-vision {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background: linear-gradient(to top, #00000074, #19191abb);
+    margin-right: 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    text-align: justify;
+    justify-items: center;
+}
+
+.container-vision i {
+    font-size: 6vh;
+    color: #006aff;
+    background-color: #ffffff;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.container-mision {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background: linear-gradient(to top, #00000074, #19191abb);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    text-align: justify;
+    justify-items: center;
+}
+
+.container-mision i {
+    font-size: 6vh;
+    color: #006aff;
+    background-color: #ffffff;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.content-info {
+    padding: 0.5rem;
+}
+
+.image-content {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.image-suplement {
+    height: 15rem;
+    width: 100%;
+    border-radius: 0.5rem;
+} 
+
+.objects-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.object {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+}
+
+
+/* Footer section */
+.phone-container, .email-container {
+    display: grid;
+    grid-template-columns: 2rem 6rem;
+    align-content: center;
+    margin: 2rem;
+}
+
+.location-container {
+    display: grid;
+    grid-template-columns: 2rem 12rem;
+    align-content: center;
+    margin: 2rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: auto;
+    background-color: #131313;
+}
+
+.footer-container i {
+    color: #fc2020;
+}
+
+.footer-container h2 {
+    font-size: 1rem;
+}
+
+.footer-container h4 {
+    font-size: 0.8rem;
+}
+
+.links h4, h2 {
+    margin: 1rem;
+}
+
+.social-container button {
+    background: none;
+    border: 0;
+}
+
+.social-container button:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.2s;
+}
+
+.contact input {
+    background-color: #363636;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    border: 0;
+    width: 20rem;
+}
+
+.contact button {
+    background-color: #363636;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    border: 0;
+    width: 20rem;
+}
+
+.contact button:hover {
+    cursor: pointer;
+    scale: 1.02;
+    transition: 0.2s;
+    box-shadow: 0px 0px 3px 2px #ffffff;  
+}
+
+.email-content {
+    display: grid;
+    grid-template-rows: 2rem 2rem 2.5rem;
+}
+
+.contact h4 {
+    margin: 0.3rem;
+}
+
+@media (max-width: 992px) {
+    .navBar .options,
+    .navBar .action_btn{
+        display: none;
+    }
+    .navBar .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}

@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+
+body {
+    height: 100vh;
+}
+
+.mainContainer {
+    height: 100vh;
+    background-image: url(../Images/atletico-hombre-mujer-pesas.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navBar {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#ff4747;
+    box-shadow: 1px 1px 6px 2px #000000;
+}
+
+.navBar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navBar .options {
+    display: flex;
+    gap: 2rem; 
+}
+
+.navBar .toggle_btn {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navBar button {
+    background: none;
+    border: 0;
+}
+
+.navBar button:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    scale: 1.2;
+}
+
+.navBar button:active {
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.navBar i {
+    font-size: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+a:hover {
+    color: #000000;
+    transition: 0.5s;   
+}
+
+.action_btn {
+    background: none;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    transition: 0.5s;
+    color: #000000;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: #ffffff1a;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu li {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+/* Here is the main content about the options to manage the web site */
+.contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+}
+
+.mainContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-width: 60rem;
+    height: 18rem;
+}
+
+.mainContent button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background: linear-gradient(to top, #00000074, #19191abb);
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 6px 2px #ffffff;
+    margin: 3rem;
+    width: 20rem;
+    height: 20rem;
+}
+
+.mainContent button:hover {
+    scale: 1.02;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.mainContent button:active {
+    scale: 0.95;
+}
+
+.userIcon i, .productsIcon i {
+    font-size: 15vh;
+    padding: 0.4rem;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .navBar .options,
+    .navBar .action_btn{
+        display: none;
+    }
+    .navBar .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+}
+@media (max-width: 576px) {
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}

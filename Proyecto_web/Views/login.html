@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="../Styles/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <button id= "return-home"><i class="fa-solid fa-house"></i></button>
+    <section class="main-container">
+            <form action="login.php" method="post">
+                <div class="login-container">
+                    <div class="login-content">
+                        <h2>Iniciar sesión</h2>
+                        <label>Usuario</label>
+                        <div class="user-content">
+                            <div class="container-icon">
+                                <span class="username-icon">
+                                    <i class="fa-solid fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="text" name="name" placeholder="Francisco">
+                        </div>
+                        <label>Contraseña</label>
+                        <div class="pass-content">
+                            <div class="container-icon">
+                                <span class="username-icon">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                            </div>
+                            <input type="password" name="password" placeholder="********">
+                        </div>
+                        
+                        <a href="">¿Olvidó su contraseña?</a>
+                    </div>
+                    <div class="button-cotainer">
+                        <button type="submit" id = "login-button" >Ingresar</button>
+                        <button type="button" id = "register-button">Registrarse</button>
+                    </div>
+                </div>
+            </form>
+    </section>
+    <script src="../JavaScript/login.js"></script>
+</body>
+</html>
